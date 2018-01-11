@@ -92,7 +92,7 @@
 					<i class="vicp-icon3"></i> {{ lang.success }}
 				</div>
 			</div>
-			<div class="vicp-operate">
+			<div class="vicp-operate" v-show="loading !== 1">
 				<a @click="setStep(2)" @mousedown="ripple">{{ lang.btn.back }}</a>
 				<a @click="off" @mousedown="ripple">{{ lang.btn.close }}</a>
 			</div>
